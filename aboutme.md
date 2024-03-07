@@ -1,16 +1,11 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+subtitle: Hi there! I'm a student studying Information Science at Cornell University with interests in Data Science and Sustainability
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### My name is Madeline Yeh. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm an undergraduate at Cornell University graduating in 2024 with a B.A. in Information Science. I am concentrating in Data Science and Information Ethics, Law, and Policy and am excited to explore sustainability efforts within the technology industry, and applications of data science to sustainability innovation. 
 
-What else do you need?
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
