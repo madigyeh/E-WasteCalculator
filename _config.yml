@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My website
+title: E-Waste Calculator
 
 # Your name to show in the footer
-author: Some Person
+author: Madeline Yeh, mgy6@cornell.edu
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -50,16 +50,9 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-#  medium: yourname
-#  reddit: yourname
-#  linkedin: daattali
+  email: "mgy6@cornell.edu"
+  github: madigyeh
+  linkedin: madelineyeh
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
