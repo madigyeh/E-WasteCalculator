@@ -20,11 +20,11 @@ author: Madeline Yeh
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  E-Waste Calculator: "e-waste"
+  About Me: "aboutme"
 
 ################
 # --- Logo --- #
