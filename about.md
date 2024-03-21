@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About E-Waste Calculator
 subtitle:
 ---
 Hi there! My name is Madeline and I'm a student studying Information Science at Cornell University with interests in Data Science and Sustainability. 
