@@ -5,6 +5,8 @@ layout: base
 {% include header.html type="page" %}
 
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <iframe src="https://my.atlist.com/map/3b3e25e0-411b-44ae-b9ba-6b0082ce8ff5?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
       {% if page.before-content %}
