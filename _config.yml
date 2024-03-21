@@ -20,10 +20,10 @@ author: Madeline Yeh
 ###############################################
 
 navbar-links:
-  Resources:
-    - Recycler Locator: "recyclers"
-    - Learn markdown: "https://www.markdowntutorial.com/"
   E-Waste Calculator: "e-waste"
+  Recycling Resources:
+    - Recycler Locator: "recyclers"
+    - Your Rights: "rights"
   About Me: "aboutme"
 
 ################
