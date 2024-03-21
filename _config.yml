@@ -22,7 +22,7 @@ author: Madeline Yeh
 navbar-links:
   E-Waste Calculator: "e-waste"
   E-Waste Minimizing Resources:
-    - Recycler Locator: "recyclers"
+    - Recycler Locator: "map"
     - Your Rights: "rights"
   About: "about"
 
@@ -76,7 +76,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website helps you calculate and visualize your E-Waste
+rss-description: This website helps you estimate and minimize your E-Waste
 
 ###########################
 # --- General options --- #
