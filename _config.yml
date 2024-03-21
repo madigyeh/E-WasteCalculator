@@ -20,7 +20,6 @@ author: Madeline Yeh
 ###############################################
 
 navbar-links:
-  E-Waste Calculator: "e-waste"
   E-Waste Minimizing Resources:
     - Recycler Locator: "map"
     - Your Rights: "rights"
