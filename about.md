@@ -4,6 +4,7 @@ title: About E-Waste Calculator
 subtitle:
 ---
 Technological advancement has occurred at exponential rates with proprietary hardware technologies being rapidly released in decreasing time intervals. Since the conception of the iPhone, Apple has released a new iPhone model, with several variations, every year since. A similar trend has followed for other appliances, including cameras, household appliances, and computers just to name a few. These advanced technologies have made life more efficient for many of its owners, but the environmental impact of the frequent upgrading and replacement of hardware technologies has not been emphasized enough in the conversation. 
+
 As a student currently studying these environmental impacts and the additional geo-political, economic and cultural influences that deepen the severity of this issue, I find that it is important to equip people with the information and understanding necessary to take action, whether that be on an individual, industrial, or systemic level.
 
 ### Author
