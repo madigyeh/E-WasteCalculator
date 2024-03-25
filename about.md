@@ -8,7 +8,7 @@ Technological advancement has occurred at exponential rates with proprietary har
 As a student currently studying these environmental impacts and the additional geo-political, economic and cultural influences that deepen the severity of this issue, I find that it is important to equip people with the information and understanding necessary to take action, whether that be on an individual, industrial, or systemic level.
 
 ### Author
-<img src="assets/madi.png"
+<img src="assets/img/Fin1.JPG"
      alt="Madeline Yeh Headshot"
      style="float: left; margin-right: 10px;" />
 
