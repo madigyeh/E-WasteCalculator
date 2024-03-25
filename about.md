@@ -8,6 +8,10 @@ Technological advancement has occurred at exponential rates with proprietary har
 As a student currently studying these environmental impacts and the additional geo-political, economic and cultural influences that deepen the severity of this issue, I find that it is important to equip people with the information and understanding necessary to take action, whether that be on an individual, industrial, or systemic level.
 
 ### Author
+<img src="assets/madi.png"
+     alt="Madeline Yeh Headshot"
+     style="float: left; margin-right: 10px;" />
+
 Hi there! My name is [Madeline Yeh](https://www.linkedin.com/in/madelineyeh/), and I am a senior studying Information Science (Data Science and Information Ethics, Law and Policy) at Cornell University. I created this website for a final project in INFO 4260, Computing on Earth: Planetary Dimensions and Consequence of Computing taught by [Professor Steve Jackson](https://sjackson.infosci.cornell.edu) in Spring 2024. Beyond this class, I am interested in sustainability within tech, and specifically, the applications of data science in improving sustainability efforts and sustainable technologies. Following my graduation from Cornell in Spring 2024, I will be joining Thermo Fisher Scientific as an Associate Data Scientist in the Digital Leadership Development Program.
 
 
