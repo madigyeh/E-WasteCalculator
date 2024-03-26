@@ -2,8 +2,14 @@ p, h2 {
   text-align: center;
 }
 
-.form {
+#section {
   background: #bce3de;
   padding: 20px;
   boarder-radius: 20px;
 }
+/* 
+.form {
+  background: #bce3de;
+  padding: 20px;
+  boarder-radius: 20px;
+} */
