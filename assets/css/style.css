@@ -24,6 +24,11 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
   float: right;
 }
+
+img.resize {
+  max-width:40%;
+  max-height:40%;
+}
 /* 
 .form {
   background: #bce3de;
