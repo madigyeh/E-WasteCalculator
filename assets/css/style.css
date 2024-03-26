@@ -5,7 +5,8 @@ p, h2 {
 #section {
   background: #9bd9e9;
   padding: 20px;
-  boarder-radius: 20px;
+  border-radius: 20px;
+  margin: 15px;
 }
 /* 
 .form {
