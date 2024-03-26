@@ -2,6 +2,10 @@ p, h2 {
   text-align: center;
 }
 
+h2 {
+  text-color: white;
+}
+
 #section {
   background: #9bd9e9;
   padding: 20px;
