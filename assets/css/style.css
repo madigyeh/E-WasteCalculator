@@ -1,3 +1,5 @@
 .form {
   background: blue;
+  padding: 20px;
+  boarder-radius: 20px;
 }
