@@ -10,7 +10,7 @@ p, h2 {
 }
 
 #section h2 {
-  color: white;
+  color: #28666E;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -26,8 +26,8 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 img.resize {
-  max-width:40%;
-  max-height:40%;
+  max-width:20%;
+  max-height: 20%;
 }
 /* 
 .form {
