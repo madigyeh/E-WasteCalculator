@@ -3,3 +3,7 @@
   padding: 20px;
   boarder-radius: 20px;
 }
+
+.form input {
+  display: flex;
+}
