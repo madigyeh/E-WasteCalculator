@@ -21,9 +21,9 @@ author: Madeline Yeh
 
 navbar-links:
   E-Waste Minimizing Resources:
-    - Certified Recycler Locator: "map"
-    - Your Recycling Rights: "recycle-rights"
     - Your Repair Rights: "repair-rights"
+    - Your Recycling Rights: "recycle-rights"
+    - Certified Recycler Locator: "map"
   About: "about"
 
 ################
