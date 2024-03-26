@@ -14,9 +14,73 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
+<!--       Small household equipment
+- Microwave
+- Kitchen appliance
+- Heating and ventilation
+- Personal Care
+- Vacuum Cleaner
+- Other
+Large Household Equipment
+- Dishwasher
+- Washing Machine
+- Dryer
+- Refrigerator
+- Air Conditioning/Heater
+- Other
+Batteries
+- Lithium Ion Batteries
+- Nickel based batteries
+- Alkaline Batteries
+- Other
+Personal Technologies
+- Mobile Phone
+- Laptop
+- Printer
+- Router
+- Other -->
       <p>Walk though your home and search for any old, broken or neglected tech equipment!</p>
       <h2>Small Household Equipment</h2>
-      <input type="range">
+      <div>
+        <h4>Microwave</h4>
+        <form name="myform" oninput="microwave1.value = microwave.valueAsNumber">
+          <input type="range" id="microwave" name="microwave" min="0" max="10" step="1" value= "0" list="markers"/>
+          <output name="microwave1" for="microwave">0</output>
+        </form>
+        <datalist id="markers">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        	<option value="5"></option>
+        	<option value="6"></option>
+        	<option value="7"></option>
+        	<option value="8"></option>
+        	<option value="9"></option>
+        	<option value="10"></option>
+        </datalist>
+      </div>
+      <div>
+        <h4>Kitchen Appliance</h4>
+        <form name="myform" oninput="kapp1.value = kapp.valueAsNumber">
+          <input type="range" id="kapp" name="kapp" min="0" max="10" step="1" value= "0" list="markers"/>
+          <output name="mkapp1" for="kapp">0</output>
+        </form>
+        <datalist id="markers">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        	<option value="5"></option>
+        	<option value="6"></option>
+        	<option value="7"></option>
+        	<option value="8"></option>
+        	<option value="9"></option>
+        	<option value="10"></option>
+        </datalist>
+      </div>
       <input type="range">
       <input type="range">
       <h2>Large Household Equipment</h2>
