@@ -2,6 +2,11 @@ submit.addEventListener("click", function() {
   
 })
 
+document.getElementById('submit').onclick = function(){
+  var microwave = document.getElementById('microwave').value;
+  console.log(microwave);
+};
+
 document.getElementById('reset').onclick = function(){
    document.getElementById('microwave').value = 0;
    document.getElementById('kapp').value = 0;
