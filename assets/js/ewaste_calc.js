@@ -1,6 +1,3 @@
-let submit = document.getElementbyId("submit")
-
-
 submit.addEventListener("click", function() {
   
 })
