@@ -13,6 +13,17 @@ p, h2 {
   color: #28666E;
 }
 
+#row1 {
+  text-align: center;
+}  
+
+.row1-1,
+.row1-2,
+.row1-3 {
+    display: inline-block;
+    vertical-align:top;
+}
+
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #28666E;
   border: none;
