@@ -71,9 +71,9 @@
    var refrigerator = document.getElementById("refrigerator").value;
    localStorage.setItem("refrigerator", refrigerator);
    console.log(refrigerator);
-   var ircon_heat = document.getElementById("ircon_heat").value;
-   localStorage.setItem("ircon_heat", kircon_heat);
-   console.log(ircon_heat);
+   var aircon_heat = document.getElementById("aircon_heat").value;
+   localStorage.setItem("aircon_heat", aircon_heat);
+   console.log(aircon_heat);
    var other_lhe = document.getElementById("other_lhe").value;
    localStorage.setItem("other_lhe", other_lhe);
    console.log(other_lhe);
