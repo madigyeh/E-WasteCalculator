@@ -19,7 +19,8 @@
     document.getElementById('printer').value = 0;
     document.getElementById('router').value = 0;
     document.getElementById('other_pe').value = 0;
-
+ }
+  
 function tosubmit() {
   // Getting the value of your text input
   var microwave = document.getElementById("microwave").value;
