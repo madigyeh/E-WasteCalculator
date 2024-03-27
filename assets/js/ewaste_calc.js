@@ -1,7 +1,3 @@
-submit.addEventListener("click", function() {
-  
-})
-
 document.getElementById('submit').onclick = function(){
   var microwave = document.getElementById('microwave').value;
   console.log(microwave);
