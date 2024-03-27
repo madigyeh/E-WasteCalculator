@@ -13,16 +13,12 @@ p, h2 {
   color: #28666E;
 }
 
-.row1 {
+.row1,
+.row2,
+.row3 {
   text-align: center;
   display: flex;
 }  
-
-.row1-1,
-.row1-2,
-.row1-3 {
-  
-}
 
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #28666E;
