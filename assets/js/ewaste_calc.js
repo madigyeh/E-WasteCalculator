@@ -1,29 +1,25 @@
-// document.getElementById('reset').onclick = function(){
-//    document.getElementById('microwave').value = 0;
-//    document.getElementById('kapp').value = 0;
-//    document.getElementById('heatvent').value = 0;
-//    document.getElementById('pc').value = 0;
-//    document.getElementById('vacuum').value = 0;
-//    document.getElementById('TV').value = 0;
-//    document.getElementById('dishwasher').value = 0;
-//    document.getElementById('wash').value = 0;
-//    document.getElementById('dryer').value = 0;
-//    document.getElementById('refrigerator').value = 0;
-//    document.getElementById('aircon_heat').value = 0;
-//    document.getElementById('other_lhe').value = 0;
-//    document.getElementById('lithiumion').value = 0;
-//    document.getElementById('nickel').value = 0;
-//    document.getElementById('alkaline').value = 0;
-//    document.getElementById('mobile').value = 0;
-//    document.getElementById('laptop').value = 0;
-//    document.getElementById('printer').value = 0;
-//    document.getElementById('router').value = 0;
-//    document.getElementById('other_pe').value = 0;
-// };
-
-function resetFunc(){
-    document.getElementById("completeform").reset();
-  }
+ document.getElementById('reset').onclick = function(){
+    document.getElementById('microwave').reset();
+    document.getElementById('kapp').reset();
+    document.getElementById('heatvent').reset();
+    document.getElementById('pc').reset();
+    document.getElementById('vacuum').reset();
+    document.getElementById('TV').reset();
+    document.getElementById('dishwasher').reset();
+    document.getElementById('wash').reset();
+    document.getElementById('dryer').reset();
+    document.getElementById('refrigerator').reset();
+    document.getElementById('aircon_heat').reset();
+    document.getElementById('other_lhe').reset();
+    document.getElementById('lithiumion').reset();
+    document.getElementById('nickel').reset();
+    document.getElementById('alkaline').reset();
+    document.getElementById('mobile').reset();
+    document.getElementById('laptop').reset();
+    document.getElementById('printer').reset();
+    document.getElementById('router').reset();
+    document.getElementById('other_pe').reset();
+ };
 
 function tosubmit() {
   // Getting the value of your text input
