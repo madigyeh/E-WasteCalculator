@@ -179,328 +179,340 @@ layout: base
           <div id = "section">  
             <h2>Large Household Equipment</h2>
             <!-- Large Household Equipment, Dishwasher, Washing Machine, Dryer, Refrigerator, Air Conditioning/Heater, Other -->
-            <div>
-              <img class= "resize" src="assets/img/dishwasher.png" alt="Dish Washer">
-              <h4>Dishwasher</h4>
-              <form name="myform" oninput="dishwasher1.value = dishwasher.valueAsNumber">
-                <input type="range" id="dishwasher" name="dishwasher" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="dishwasher1" for="dishwasher">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
+            <div class = "row1">
+              <div class = "row1-1">
+                <img class= "resize" src="assets/img/dishwasher.png" alt="Dish Washer">
+                <h4>Dishwasher</h4>
+                <form name="myform" oninput="dishwasher1.value = dishwasher.valueAsNumber">
+                  <input type="range" id="dishwasher" name="dishwasher" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="dishwasher1" for="dishwasher">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row1-2">
+                <img class= "resize" src="assets/img/laundry-machine.png" alt="Washing Machine">
+                <h4>Washing Machine</h4>
+                <form name="myform" oninput="wash1.value = wash.valueAsNumber">
+                  <input type="range" id="wash" name="wash" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="wash1" for="wash">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row1-3">
+                <img class= "resize" src="assets/img/dryer.png" alt="Dryer">
+                <h4>Clothing Dryer</h4>
+                <form name="myform" oninput="dryer1.value = dryer.valueAsNumber">
+                  <input type="range" id="dryer" name="dryer" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="dryer1" for="dryer">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
             </div>
-            <div>
-              <img class= "resize" src="assets/img/laundry-machine.png" alt="Washing Machine">
-              <h4>Washing Machine</h4>
-              <form name="myform" oninput="wash1.value = wash.valueAsNumber">
-                <input type="range" id="wash" name="wash" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="wash1" for="wash">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/dryer.png" alt="Dryer">
-              <h4>Clothing Dryer</h4>
-              <form name="myform" oninput="dryer1.value = dryer.valueAsNumber">
-                <input type="range" id="dryer" name="dryer" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="dryer1" for="dryer">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/fridge.png" alt="Refrigerator">
-              <h4>Refrigerator</h4>
-              <form name="myform" oninput="refrigerator1.value = refrigerator.valueAsNumber">
-                <input type="range" id="refrigerator" name="refrigerator" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="refrigerator1" for="refrigerator">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/air-conditioning.png" alt="Air Conditioner">
-              <h4>Air Conditioning/Heating</h4>
-              <form name="myform" oninput="aircon_heat1.value = aircon_heat.valueAsNumber">
-                <input type="range" id="aircon_heat" name="aircon_heat" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="aircon_heat1" for="aircon_heat">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/freezer.png" alt="Freezer">
-              <h4>Other</h4>
-              <form name="myform" oninput="other_lhe1.value = other_lhe.valueAsNumber">
-                <input type="range" id="other_lhe" name="other_lhe" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="other_lhe1" for="other_lhe">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
+            <div class = "row2">
+              <div class ="row2-1">
+                <img class= "resize" src="assets/img/fridge.png" alt="Refrigerator">
+                <h4>Refrigerator</h4>
+                <form name="myform" oninput="refrigerator1.value = refrigerator.valueAsNumber">
+                  <input type="range" id="refrigerator" name="refrigerator" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="refrigerator1" for="refrigerator">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row2-2">
+                <img class= "resize" src="assets/img/air-conditioning.png" alt="Air Conditioner">
+                <h4>Air Conditioning/Heating</h4>
+                <form name="myform" oninput="aircon_heat1.value = aircon_heat.valueAsNumber">
+                  <input type="range" id="aircon_heat" name="aircon_heat" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="aircon_heat1" for="aircon_heat">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row2-3">
+                <img class= "resize" src="assets/img/freezer.png" alt="Freezer">
+                <h4>Other</h4>
+                <form name="myform" oninput="other_lhe1.value = other_lhe.valueAsNumber">
+                  <input type="range" id="other_lhe" name="other_lhe" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="other_lhe1" for="other_lhe">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
             </div>
           </div>
           <div id = "section">  
             <h2>Batteries</h2>
             <!-- Batteries: Lithium Ion Batteries, Nickel based batteries, Alkaline Batteries, Other-->
-            <div>
-              <img class= "resize" src="assets/img/energy.png" alt="Lithium Ion Battery">
-              <h4>Lithium Ion Batteries</h4>
-              <form name="myform" oninput="lithiumion1.value = lithiumion.valueAsNumber">
-                <input type="range" id="lithiumion" name="lithiumion" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="lithiumion1" for="lithiumion">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/battery-pack.png" alt="Nickel Batteries">
-              <h4>Nickel Batteries</h4>
-              <form name="myform" oninput="nickel1.value = nickel.valueAsNumber">
-                <input type="range" id="nickel" name="nickel" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="nickel1" for="nickel">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/energy-2.png" alt="Alkaline Batteries">
-              <h4>Alkaline Batteries</h4>
-              <form name="myform" oninput="alkaline1.value = alkaline.valueAsNumber">
-                <input type="range" id="alkaline" name="alkaline" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="alkaline1" for="alkaline">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/battery-pack-2.png" alt="Other Batteries">
-              <h4>Other</h4>
-              <form name="myform" oninput="other_bat1.value = other_bat.valueAsNumber">
-                <input type="range" id="other_bat" name="other_bat" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="aother_bat1" for="other_bat">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
+            <div class = "row1">
+                <div class = "row1-1>
+                  <img class= "resize" src="assets/img/energy.png" alt="Lithium Ion Battery">
+                  <h4>Lithium Ion Batteries</h4>
+                  <form name="myform" oninput="lithiumion1.value = lithiumion.valueAsNumber">
+                    <input type="range" id="lithiumion" name="lithiumion" min="0" max="10" step="1" value= "0" list="markers"/>
+                    <output name="lithiumion1" for="lithiumion">0</output>
+                  </form>
+                  <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  	<option value="5"></option>
+                  	<option value="6"></option>
+                  	<option value="7"></option>
+                  	<option value="8"></option>
+                  	<option value="9"></option>
+                  	<option value="10"></option>
+                  </datalist>
+                </div>
+                <div class = "row1-2">
+                  <img class= "resize" src="assets/img/battery-pack.png" alt="Nickel Batteries">
+                  <h4>Nickel Batteries</h4>
+                  <form name="myform" oninput="nickel1.value = nickel.valueAsNumber">
+                    <input type="range" id="nickel" name="nickel" min="0" max="10" step="1" value= "0" list="markers"/>
+                    <output name="nickel1" for="nickel">0</output>
+                  </form>
+                  <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  	<option value="5"></option>
+                  	<option value="6"></option>
+                  	<option value="7"></option>
+                  	<option value="8"></option>
+                  	<option value="9"></option>
+                  	<option value="10"></option>
+                  </datalist>
+                </div>
+                <div class = "row1-3">
+                  <img class= "resize" src="assets/img/energy-2.png" alt="Alkaline Batteries">
+                  <h4>Alkaline Batteries</h4>
+                  <form name="myform" oninput="alkaline1.value = alkaline.valueAsNumber">
+                    <input type="range" id="alkaline" name="alkaline" min="0" max="10" step="1" value= "0" list="markers"/>
+                    <output name="alkaline1" for="alkaline">0</output>
+                  </form>
+                  <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  	<option value="5"></option>
+                  	<option value="6"></option>
+                  	<option value="7"></option>
+                  	<option value="8"></option>
+                  	<option value="9"></option>
+                  	<option value="10"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class = "row2">
+                <div class = "row2-1">
+                  <img class= "resize" src="assets/img/battery-pack-2.png" alt="Other Batteries">
+                  <h4>Other</h4>
+                  <form name="myform" oninput="other_bat1.value = other_bat.valueAsNumber">
+                    <input type="range" id="other_bat" name="other_bat" min="0" max="10" step="1" value= "0" list="markers"/>
+                    <output name="aother_bat1" for="other_bat">0</output>
+                  </form>
+                  <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                  	<option value="5"></option>
+                  	<option value="6"></option>
+                  	<option value="7"></option>
+                  	<option value="8"></option>
+                  	<option value="9"></option>
+                  	<option value="10"></option>
+                  </datalist>
+                </div>
             </div>
           </div>
           <div id = "section">  
             <h2>Personal Electronics</h2>
             <!-- Personal Technologies: Mobile Phone, Laptop, Printer, Router, Other --> 
-            <div>
-              <img class= "resize" src="assets/img/phone.png" alt="Mobile Phone">
-              <h4>Mobile Phone</h4>
-              <form name="myform" oninput="mobile1.value = mobile.valueAsNumber">
-                <input type="range" id="mobile" name="mobile" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="mobile1" for="mobile">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
+            <div class = "row1">
+              <div class = "row1-1">
+                <img class= "resize" src="assets/img/phone.png" alt="Mobile Phone">
+                <h4>Mobile Phone</h4>
+                <form name="myform" oninput="mobile1.value = mobile.valueAsNumber">
+                  <input type="range" id="mobile" name="mobile" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="mobile1" for="mobile">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row1-2">
+                <img class= "resize" src="assets/img/laptop.png" alt="Laptop">
+                <h4>Laptop</h4>
+                <form name="myform" oninput="laptop1.value = laptop.valueAsNumber">
+                  <input type="range" id="laptop" name="laptop" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="laptop1" for="laptop">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row1-3">
+                <img class= "resize" src="assets/img/printer.png" alt="Printer">
+                <h4>Printer</h4>
+                <form name="myform" oninput="printer1.value = printer.valueAsNumber">
+                  <input type="range" id="printer" name="printer" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="printer1" for="printer">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
             </div>
-            <div>
-              <img class= "resize" src="assets/img/laptop.png" alt="Laptop">
-              <h4>Laptop</h4>
-              <form name="myform" oninput="laptop1.value = laptop.valueAsNumber">
-                <input type="range" id="laptop" name="laptop" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="laptop1" for="laptop">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/printer.png" alt="Printer">
-              <h4>Printer</h4>
-              <form name="myform" oninput="printer1.value = printer.valueAsNumber">
-                <input type="range" id="printer" name="printer" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="printer1" for="printer">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/wifi.png" alt="Router">
-              <h4>Router</h4>
-              <form name="myform" oninput="router1.value = router.valueAsNumber">
-                <input type="range" id="router" name="router" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="router1" for="router">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
-            </div>
-            <div>
-              <img class= "resize" src="assets/img/smart-watch.png" alt="Other Personal Electronics">
-              <h4>Other</h4>
-              <form name="myform" oninput="other_pe1.value = other_pe.valueAsNumber">
-                <input type="range" id="other_pe" name="other_pe" min="0" max="10" step="1" value= "0" list="markers"/>
-                <output name="other_pe1" for="other_pe">0</output>
-              </form>
-              <datalist id="markers">
-                <option value="0"></option>
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-              	<option value="5"></option>
-              	<option value="6"></option>
-              	<option value="7"></option>
-              	<option value="8"></option>
-              	<option value="9"></option>
-              	<option value="10"></option>
-              </datalist>
+            <div class = "row2">
+              <div class = "row2-1">
+                <img class= "resize" src="assets/img/wifi.png" alt="Router">
+                <h4>Router</h4>
+                <form name="myform" oninput="router1.value = router.valueAsNumber">
+                  <input type="range" id="router" name="router" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="router1" for="router">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
+              <div class = "row2-2">
+                <img class= "resize" src="assets/img/smart-watch.png" alt="Other Personal Electronics">
+                <h4>Other</h4>
+                <form name="myform" oninput="other_pe1.value = other_pe.valueAsNumber">
+                  <input type="range" id="other_pe" name="other_pe" min="0" max="10" step="1" value= "0" list="markers"/>
+                  <output name="other_pe1" for="other_pe">0</output>
+                </form>
+                <datalist id="markers">
+                  <option value="0"></option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="4"></option>
+                	<option value="5"></option>
+                	<option value="6"></option>
+                	<option value="7"></option>
+                	<option value="8"></option>
+                	<option value="9"></option>
+                	<option value="10"></option>
+                </datalist>
+              </div>
             </div>
           </div>
           <ul></ul>
