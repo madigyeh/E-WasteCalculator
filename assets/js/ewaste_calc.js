@@ -40,14 +40,9 @@
     document.getElementById('other_pe').value = 0;
     document.getElementById('other_pe1').value = 0;
  }
-  
-function tosubmit() {
-  // Getting the value of your text input
-  var microwave = document.getElementById("microwave").value;
 
-  // Storing the value above into localStorage
-  localStorage.setItem("microwave", microwave);
-  console.log(microwave);
-
-  return true;
-}
+ document.getElementById('submit').onclick = function(){
+   var microwave = document.getElementById("microwave").value;
+   localStorage.setItem("microwave", microwave);
+   console.log(microwave);
+ }
