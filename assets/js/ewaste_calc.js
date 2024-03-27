@@ -25,3 +25,13 @@ document.getElementById('reset').onclick = function(){
    document.getElementById('router').value = 0;
    document.getElementById('other_pe').value = 0;
 };
+
+function tosubmit() {
+  // Getting the value of your text input
+  var microwave = document.getElementById("microwave").value;
+
+  // Storing the value above into localStorage
+  localStorage.setItem("microwave", microwave);
+
+  return true;
+}
