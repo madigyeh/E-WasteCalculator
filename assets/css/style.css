@@ -21,8 +21,7 @@ p, h2 {
 .row1-1,
 .row1-2,
 .row1-3 {
-/*     display: inline-block;
-    vertical-align:top; */
+  
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -38,8 +37,8 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 img.resize {
-  max-width:20%;
-  max-height: 20%;
+  max-width:40%;
+  max-height: 40%;
 }
 /* 
 .form {
