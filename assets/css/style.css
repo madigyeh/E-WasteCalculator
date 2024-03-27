@@ -13,7 +13,7 @@ p, h2 {
   color: #28666E;
 }
 
-#row1 {
+.row1 {
   text-align: center;
   display: flex;
 }  
