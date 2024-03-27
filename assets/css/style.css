@@ -15,13 +15,14 @@ p, h2 {
 
 #row1 {
   text-align: center;
+  display: flex;
 }  
 
 .row1-1,
 .row1-2,
 .row1-3 {
-    display: inline-block;
-    vertical-align:top;
+/*     display: inline-block;
+    vertical-align:top; */
 }
 
 input[type=button], input[type=submit], input[type=reset] {
