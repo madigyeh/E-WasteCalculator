@@ -13,9 +13,12 @@ p, h2 {
   color: #28666E;
 }
 
-.row1 {
+.row1,
+.row2,
+.row3 {
   text-align: center;
   display: flex;
+  padding: 20px;
 }  
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -31,9 +34,12 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 img.resize {
-/*   max-width: 5%;
-  max-height: 5%; */
+  min-width: 10%;
+  max-width: 30%;
+  min-height: 10%;
+  max-height: 30%;
 }
+
 /* 
 .form {
   background: #bce3de;
