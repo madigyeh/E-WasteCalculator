@@ -19,7 +19,7 @@ p, h2 {
 .row3 {
   text-align: center;
   display: flex;
-  padding: 10px;
+  padding: 5px;
 }  
 
 input[type=button], input[type=submit], input[type=reset] {
