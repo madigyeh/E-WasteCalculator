@@ -15,8 +15,19 @@ layout: base
         </div>
       {% endif %}
       
-      const username = new URL(location.href).searchParams.get("username")
       {{ content }}
+      <div>
+        <h3>Great job! You found 100 items.</h3>
+  
+        <p>You collected a total of lbs of e-waste. If properly recycled, you can save up to lbs of CO2 equivalent.</p>
+  
+        <p>Your CO2 savings equal a 0 mi drive.</p>
+      </div>
+
+      <div>
+        <h3>Next Steps:</h3>
+  <!--       add buttons -->
+      </div>
 
       {% if page.after-content %}
         <div class="after-content">
