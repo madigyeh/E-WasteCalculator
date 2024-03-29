@@ -28,16 +28,17 @@ layout: base
   
         <div id = "section">
           <h2>Next Steps:</h2>
-          <input id="recycler" type="submit" value="Find an E-Waste Recycler">
+          <input id="recycler" type="button" value="Find an E-Waste Recycler">
           <input id="rights" type="button" value="Learn About Your Rights">
+          <hr></hr>
           <h4>Do your part to minimize E-Waste!</h4>
         </div>
         <script>
-          document.getElementById("submit").addEventListener("click", redirectMapFunction);
+          document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
               window.location.href = "https://madigyeh.github.io/E-WasteCalculator/map/";
           }
-          document.getElementById("button").addEventListener("click", redirectRightsFunction);
+          document.getElementById("rights").addEventListener("click", redirectRightsFunction);
           function redirectRightsFunction(){
               window.location.href = "https://madigyeh.github.io/E-WasteCalculator/repair-rights/";
           }
