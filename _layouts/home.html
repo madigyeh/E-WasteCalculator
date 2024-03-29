@@ -42,6 +42,14 @@ layout: base
                     <option value="9"></option>
                     <option value="10"></option>
                   </datalist>
+                  <script>
+                    const value = document.querySelector("#microwave1");
+                    const input = document.querySelector("#microwave");
+                    value.textContent = input.value;
+                    input.addEventListener("input", (event) => {
+                      value.textContent = event.target.value;
+                    });
+                  </script>
                 </div>
                 <div class = "row1-2">
                   <img class="resize" src="assets/img/blender.png" alt="Blender">
