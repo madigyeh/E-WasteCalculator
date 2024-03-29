@@ -16,12 +16,6 @@ layout: base
       {% endif %}
       <head>
         <link rel="stylesheet" href="assets/css/style.css">
-        <script>
-          document.getElementById("submit").addEventListener("click", redirectFunction);
-          function redirectFunction(){
-              windows.location.href = "https://madigyeh.github.io/E-WasteCalculator/results/";
-          }
-        </script>
         <body>
           <!-- E-Waste Calculator -->
           <form onsubmit="confirmInput()" action="https://madigyeh.github.io/E-WasteCalculator/results/">
@@ -601,6 +595,12 @@ layout: base
             <input id="submit" type="submit" value="Submit">
             <input id="reset" type="reset" value="Reset">
           </form>
+          <script>
+            document.getElementById("submit").addEventListener("click", redirectFunction);
+            function redirectFunction(){
+                windows.location.href = "https://madigyeh.github.io/E-WasteCalculator/results/";
+            }
+          </script>
           <script type="text/javascript" src="assets/js/ewaste_calc.js"></script>
         </body>
       </head>
