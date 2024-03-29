@@ -17,8 +17,9 @@ layout: base
       <head>
         <link rel="stylesheet" href="assets/css/style.css">
         <script>
-          function confirmInput() {
-            alert("Let's calculate your e-waste!");
+          document.getElementById("submit").addEventListener("click", redirectFunction);
+          function redirectFunction(){
+              windows.location.href = "https://madigyeh.github.io/E-WasteCalculator/results/";
           }
         </script>
         <body>
