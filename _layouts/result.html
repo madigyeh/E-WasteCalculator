@@ -16,19 +16,24 @@ layout: base
       {% endif %}
       
       {{ content }}
-      <div>
-        <h3>Great job! You found 100 items.</h3>
+      <head>
+        <link rel="stylesheet" href="assets/css/style.css">
+      </head>
+      <body>
+        <div>
+          <h3>Great job! You found 100 items.</h3>
+    
+          <p>You collected a total of lbs of e-waste. If properly recycled, you can save up to lbs of CO2 equivalent.</p>
+    
+          <p>Your CO2 savings equal a 0 mi drive.</p>
+        </div>
   
-        <p>You collected a total of lbs of e-waste. If properly recycled, you can save up to lbs of CO2 equivalent.</p>
-  
-        <p>Your CO2 savings equal a 0 mi drive.</p>
-      </div>
-
-      <div>
-        <h3>Next Steps:</h3>
-        <input id="recycler" type="submit" value="Find an E-Waste Recycler">
-        <input id="rights" type="submit" value="Learn About Your Rights">
-      </div>
+        <div>
+          <h3>Next Steps:</h3>
+          <input id="recycler" type="submit" value="Find an E-Waste Recycler">
+          <input id="rights" type="submit" value="Learn About Your Rights">
+        </div>
+      </body>
 
       {% if page.after-content %}
         <div class="after-content">
