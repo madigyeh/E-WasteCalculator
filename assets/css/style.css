@@ -10,6 +10,10 @@ p, h1, h2, h3 {
   margin-top: 20px;
 }
 
+#negative_space {
+  margin_bottom: -50px;
+}
+
 #section {
   background: #bce3de;
   padding: 20px;
