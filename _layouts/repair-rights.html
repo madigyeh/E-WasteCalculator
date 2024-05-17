@@ -19,16 +19,11 @@ layout: base
         <script type="text/javascript" src="../assets/js/results.js"></script>
       </head>
       <body>
+        <h1>Before you recycle, have you considered repair?</h1>
+        <p>While recycling old technology can reduce CO2 emissions, repair can avoid emissions completely!</p>
         <div id = "section">
-          <h2>Before you recycle, have you considered repair?</h2>
-    
-          <p>While recycling old technology can reduce CO2 emissions, repair can avoid emissions completely!</p>
-          <img id ="car" class="resize" src="../assets/img/car.png" alt="Car">
-          <p>Your CO2 savings equal approximately a <span id="totalMileage"></span>mi drive.</p>
-        </div>
-  
-        <div id = "section">
-          <h2>Next Steps:</h2>
+          <h2>In 2022, New York State passed the "Right to Repair" Law</h2>
+          <input id="repairright" type="button" value="Read the Law">
           <div class = "row1">
             <input id="recycler" type="button" value="Find an E-Waste Recycler">
             <input id="rights" type="button" value="Learn About Your Rights">
@@ -75,9 +70,9 @@ layout: base
           const displayMileage = document.querySelector("#totalMileage");
           displayMileage.textContent = distance;
 
-          document.getElementById("recycler").addEventListener("click", redirectMapFunction);
-          function redirectMapFunction(){
-              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/map/";
+          document.getElementById("repairright").addEventListener("click", redirectExternalLaw);
+          function redirectExternalLaw(){
+              window.location.href = "https://www.nysenate.gov/legislation/bills/2021/S4104";
           }
           
           document.getElementById("rights").addEventListener("click", redirectRightsFunction);
