@@ -56,7 +56,9 @@ img.resize {
 }
 
 #ifixit {
-  float: center;
+  display: block; 
+  margin: 0 auto;
+  width: fit-content;
 }
 
 /* Remove float: center from input[type=button] */
