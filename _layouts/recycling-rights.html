@@ -80,18 +80,18 @@ layout: base
           <h3>Why does this matter?</h3>
           <input id="recycleright" type="button" value="Read the Law">
         </div>
-        <h2>Featured Resource: iFixIt</h2>
-        <img src="../assets/img/Apple-Self-Service-Repair-Program-iPhone.jpeg" alt="iFixIt">
-        <p>iFixit is a free community sourced forum of repair guides for all different types of products and technologies. The company and website seeks to advocate for the "right to repair" and stand by their motto: "If you can't fix it, you don't own it". iFixIt also sells repair kits that provide tools to open and unlock devices and electronics for repair.</p>
-        <input id="ifixit" type="button" value="iFixIt">
+        <h2>Featured Resource: Certified Recycler Locator</h2>
+        <img src="../assets/img/ewaste-worker.jpg" alt="RecPic">
+        <p>An "electronic waste recycling facility" is a facility at which the materials, components or commodities contained in electronic waste are separated, dismantled or processed for the purpose of preparing the materials, components or commodities for use or reuse in new products or components thereof. This supports the circular economy in which materials already in the use are repurposed!</p>
+        <input id="mapnav" type="button" value="Find an E-Waste Recycler Near You">
         <div id = "section">
           <h3>Does your tech still have a few years left? Try repair.</h3>
           <input id="repair" type="button" value="Learn About Your Repair Rights">
         </div>
         <script>
-          document.getElementById("recycleright").addEventListener("click", redirectExternalRLaw);
-          function redirectExternalRLaw(){
-              window.location = "https://www.nysenate.gov/legislation/laws/ENV/A27T26";
+          document.getElementById("mapnav").addEventListener("click", redirectMap);
+          function redirectMap(){
+              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/map/";
           }
 
           document.getElementById("ifixit").addEventListener("click", ifixit);
