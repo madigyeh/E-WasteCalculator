@@ -39,28 +39,30 @@ layout: base
           </div>
         </div>
         <script>
-          const mic = localStorage.getItem("microwaveValue");
-          const kap = localStorage.getItem("kappValue");
-          const hv = localStorage.getItem("heatventValue");
-          const hd = localStorage.getItem("hairdryerValue");
-          const vc = localStorage.getItem("vacuumValue");
-          const tv = localStorage.getItem("tvValue");
-          const dw = localStorage.getItem("dishwasherValue");
-          const dry = localStorage.getItem("dryerValue");
-          const fr = localStorage.getItem("fridgeValue");
-          const ac = localStorage.getItem("ACValue");
-          const fz = localStorage.getItem("freezerValue");
-          const opc = localStorage.getItem("otherPCValue");
-          const li = localStorage.getItem("lithiumionValue");
-          const nic = localStorage.getItem("nickelValue");
-          const alk = localStorage.getItem("alkalineValue");
-          const ph = localStorage.getItem("phoneValue");
-          const lp = localStorage.getItem("laptopValue");
-          const pr = localStorage.getItem("printerValue");
-          const rt = localStorage.getItem("routerValue");
-          const ope = localStorage.getItem("otherPEValue");
+          const mic = Number(localStorage.getItem("microwaveValue"));
+          const kap = Number(localStorage.getItem("kappValue"));
+          const hv = Number(localStorage.getItem("heatventValue"));
+          const hd = Number(localStorage.getItem("hairdryerValue"));
+          const vc = Number(localStorage.getItem("vacuumValue"));
+          const tv = Number(localStorage.getItem("tvValue"));
+          const dw = Number(localStorage.getItem("dishwasherValue"));
+          const dry = Number(localStorage.getItem("dryerValue"));
+          const fr = Number(localStorage.getItem("fridgeValue"));
+          const ac = Number(localStorage.getItem("ACValue"));
+          const fz = Number(localStorage.getItem("freezerValue"));
+          const opc = Number(localStorage.getItem("otherPCValue"));
+          const li = Number(localStorage.getItem("lithiumionValue"));
+          const nic = Number(localStorage.getItem("nickelValue"));
+          const alk = Number(localStorage.getItem("alkalineValue"));
+          const ph = Number(localStorage.getItem("phoneValue"));
+          const lp = Number(localStorage.getItem("laptopValue"));
+          const pr = Number(localStorage.getItem("printerValue"));
+          const rt = Number(localStorage.getItem("routerValue"));
+          const ope = Number(localStorage.getItem("otherPEValue"));
+          const total = mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
+          
           const displayElement = document.querySelector("#displayValues");
-          displayElement.textContent += mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
+          displayElement.textContent += total;
           
           document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
