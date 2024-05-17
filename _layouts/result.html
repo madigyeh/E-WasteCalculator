@@ -40,8 +40,27 @@ layout: base
         </div>
         <script>
           const mic = localStorage.getItem("microwaveValue");
+          const kap = localStorage.getItem("kappValue");
+          const hv = localStorage.getItem("heatventValue");
+          const hd = localStorage.getItem("hairdryerValue");
+          const vc = localStorage.getItem("vacuumValue");
+          const tv = localStorage.getItem("tvValue");
+          const dw = localStorage.getItem("dishwasherValue");
+          const dry = localStorage.getItem("dryerValue");
+          const fr = localStorage.getItem("fridgeValue");
+          const ac = localStorage.getItem("ACValue");
+          const fz = localStorage.getItem("freezerValue");
+          const opc = localStorage.getItem("otherPCValue");
+          const li = localStorage.getItem("lithiumionValue");
+          const nic = localStorage.getItem("nickelValue");
+          const alk = localStorage.getItem("alkalineValue");
+          const ph = localStorage.getItem("phoneValue");
+          const lp = localStorage.getItem("laptopValue");
+          const pr = localStorage.getItem("printerValue");
+          const rt = localStorage.getItem("routerValue");
+          const ope = localStorage.getItem("otherPEValue");
           const displayElement = document.querySelector("#displayValues");
-          displayElement.textContent += mic;
+          displayElement.textContent += mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
           
           document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
