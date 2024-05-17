@@ -55,6 +55,8 @@ img.resize {
   max-width: 30%;
   min-height: 10%;
   max-height: 30%;
+  display: block;
+  margin: 0 auto
 }
 
 /* 
