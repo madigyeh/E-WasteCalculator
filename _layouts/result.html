@@ -24,7 +24,7 @@ layout: base
     
           <p>You collected a total of <span id="totalWaste"></span>lbs of e-waste. If properly recycled, you can save up to <span id="totalCO2"></span>lbs of CO2 equivalent.</p>
           <img id ="car" class="resize" src="../assets/img/car.png" alt="Car">
-          <p>Your CO2 savings equal a 0 mi drive.</p>
+          <p>Your CO2 savings equal a <span id="totalMileage"></span>mi drive.</p>
         </div>
   
         <div id = "section">
@@ -60,7 +60,8 @@ layout: base
           const ope = Number(localStorage.getItem("otherPEValue"));
           const total = mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
           const ewasteTotal = 21 * mic + 50 * kap + 22 * hv + 2 * hd + 10 * vc + 28 * tv + 140 * dw + 175 * dry + 315 * fr + 170 * ac + 110 * fz + 25 * opc + 0.051 * li + 0.051 * nic + 0.051 * alk + 0.4 * ph + 5 * lp + 5 * pr + 1 * rt + 3 * ope;
-          const co2Total = (21 * mic + 50 * kap + 22 * hv + 2 * hd + 10 * vc + 28 * tv + 140 * dw + 175 * dry + 315 * fr + 170 * ac + 110 * fz + 25 * opc + 0.051 * li + 0.051 * nic + 0.051 * alk + 0.4 * ph + 5 * lp + 5 * pr + 1 * rt + 3 * ope) * 1.44
+          const co2Total = ewasteTotal * 1.44
+          const distance = co2Total / 0.96
           
           const displayCount = document.querySelector("#totalItems");
           displayCount.textContent = total;
@@ -69,7 +70,10 @@ layout: base
           displayEwaste.textContent = ewasteTotal;
 
           const displayCO2 = document.querySelector("#totalCO2");
-          displayEwaste.textContent = co2Total;
+          displayCO2.textContent = co2Total;
+
+          const displayMileage = document.querySelector("#totalMileage");
+          displayMileage.textContent = distance;
 
           document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
