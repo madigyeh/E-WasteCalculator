@@ -20,7 +20,7 @@ layout: base
       </head>
       <body>
         <div id = "section">
-          <h2 id="displayValues">Great job! You found </h2>
+          <h2 id="displayValues">Great job!</h2>
     
           <p>You collected a total of lbs of e-waste. If properly recycled, you can save up to lbs of CO2 equivalent.</p>
           <img id ="car" class="resize" src="../assets/img/car.png" alt="Car">
@@ -61,7 +61,7 @@ layout: base
           const total = mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
           
           const displayElement = document.querySelector("#displayValues");
-          displayElement.textContent += total + items.;
+          displayElement.textContent = 'Great job! You found ${total} items.';
           
           document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
