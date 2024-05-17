@@ -18,6 +18,50 @@ p, h2, h3 {
 .row1,
 .row2,
 .row3 {
+  display: flex;
+  justify-content: center; 
+  padding: 5px;
+}  
+
+#car {
+  display: block;
+  margin: 0 auto; 
+}
+
+input[type=submit], input[type=reset], input[type=button] {
+  background-color: #28666E;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Remove float: center from input[type=button] */
+
+
+/* p, h2, h3 {
+  text-align: center;
+}
+
+#section {
+  background: #bce3de;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+#section h2 {
+  color: #28666E;
+  margin-bottom: 10px;
+}
+
+.row1,
+.row2,
+.row3 {
   text-align: center;
   display: flex;
   padding: 5px;
@@ -59,7 +103,7 @@ img.resize {
   display: block;
   margin: 0 auto;
 }
-
+ */
 /* 
 .form {
   background: #bce3de;
