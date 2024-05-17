@@ -60,8 +60,8 @@ layout: base
           const ope = Number(localStorage.getItem("otherPEValue"));
           const total = mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
           const ewasteTotal = 21 * mic + 50 * kap + 22 * hv + 2 * hd + 10 * vc + 28 * tv + 140 * dw + 175 * dry + 315 * fr + 170 * ac + 110 * fz + 25 * opc + 0.051 * li + 0.051 * nic + 0.051 * alk + 0.4 * ph + 5 * lp + 5 * pr + 1 * rt + 3 * ope;
-          const co2Total = ewasteTotal * 1.44
-          const distance = co2Total / 0.96
+          const co2Total = (ewasteTotal * 1.44).toFixed(2);
+          const distance = (co2Total / 0.96).toFixed(2);
           
           const displayCount = document.querySelector("#totalItems");
           displayCount.textContent = total;
