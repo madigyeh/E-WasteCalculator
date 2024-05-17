@@ -38,6 +38,8 @@ layout: base
           </div>
         </div>
         <script>
+          const microwave = localStorage.getItem("microwaveValue");
+          alert(microwave)
           document.getElementById("recycler").addEventListener("click", redirectMapFunction);
           function redirectMapFunction(){
               window.location.href = "https://madigyeh.github.io/E-WasteCalculator/map/";
