@@ -592,15 +592,15 @@ layout: base
               </div>
             </div>
             <ul></ul>
-            <input id="submit" type="submit" value="Submit" onclick="saveData(event)">
+            <input id="submit" type="submit" value="Submit">
             <input id="reset" type="reset" value="Reset">
           </form>
           <script>
-            function saveData(event) {
-              event.preventDefault(); // Prevent the form from submitting
+            document.getElementById("submit").addEventListener("click", redirectFunction);
+            function redirectFunction(){
               localStorage.setItem("microwaveValue", input.value);
-              window.location.href = 'https://madigyeh.github.io/E-WasteCalculator/results/';
-            } 
+              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/results/";
+            }
           </script>
           <script type="text/javascript" src="assets/js/ewaste_calc.js"></script>
         </body>
