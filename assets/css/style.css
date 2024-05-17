@@ -47,6 +47,11 @@ img.resize {
   display: block;
   margin: 0 auto;
 }
+
+.right-aligned {
+  float: right;
+}
+
 /* Remove float: center from input[type=button] */
 
 
