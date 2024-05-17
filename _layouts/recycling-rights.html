@@ -1,0 +1,121 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script type="text/javascript" src="../assets/js/results.js"></script>
+      </head>
+      <body>
+        <h1>Before you recycle, have you considered repair?</h1>
+        <p>While recycling old technology can reduce CO2 emissions, repair can avoid emissions completely!</p>
+        <div id = "section">
+          <h3>In 2022, New York State passed the "Right to Repair" Law, formally known as the Digital Fair Repair Act</h3>
+          <h5>The following items are covered under the Digital Fair Repair Act:</h5>
+          <div class = "row1">
+            <div class = "row1-1">
+              <img class= "resize" src="../assets/img/mobile-phone.png" alt="Mobile Phone">
+              <p>Smartphones</p>
+            </div>
+            <div class = "row1-2">
+              <img class="resize" src="../assets/img/tablet.png" alt="Tablet">
+              <p>Tablets and e-Readers</p></p>
+            </div>
+            <div class = "row1-3">
+              <img class="resize" src="../assets/img/laptop.png" alt="Laptop">
+              <p>Laptops and Desktops</p>
+            </div>
+          </div>
+          <div class = "row2">
+            <div class = "row2-1">
+              <img class= "resize" src="../assets/img/monitor.png" alt="Monitor">
+              <p>Monitors</p>
+            </div>
+            <div class = "row2-2">
+              <img class="resize" src="../assets/img/drone.png" alt="Drone">
+              <p>Drones</p></p>
+            </div>
+            <div class = "row2-3">
+              <img class="resize" src="../assets/img/game-console.png" alt="Game Console">
+              <p>Video Game Consoles*</p>
+            </div>
+          </div>
+          <div class = "row3">
+            <div class = "row3-1">
+              <img class= "resize" src="../assets/img/news-reporter.png" alt="TV">
+              <p>Televisions</p>
+            </div>
+            <div class = "row3-2">
+              <img class="resize" src="../assets/img/sound-system.png" alt="Sound System">
+              <p>Home Audio Equipment</p></p>
+            </div>
+          </div>
+          <p>*Video game consoles are included, but the bill notes that manufacturers of consoles do not have to share materials “in a manner that is inconsistent with or in violation of any federal law,” the exact implications of which remain to be determined. </p>
+          <h5>Under this new law, manufacturers must make available to independent repair providers:</h5>
+          <div class = "row1">
+            <div class = "row1-1">
+              <img class= "resize" src="../assets/img/spare-parts.png" alt="Parts">
+              <p>Parts</p>
+            </div>
+            <div class = "row1-2">
+              <img class="resize" src="../assets/img/tool-box.png" alt="Tools">
+              <p>Tools</p></p>
+            </div>
+            <div class = "row1-3">
+              <img class="resize" src="../assets/img/documents.png" alt="Docments">
+              <p>Documentation</p>
+            </div>
+          </div>
+          <h3>Why does this matter?</h3>
+          <input id="repairright" type="button" value="Read the Law">
+        </div>
+        <h2>Featured Resource: iFixIt</h2>
+        <img src="../assets/img/Apple-Self-Service-Repair-Program-iPhone.jpeg" alt="iFixIt">
+        <p>iFixit is a free community sourced forum of repair guides for all different types of products and technologies. The company and website seeks to advocate for the "right to repair" and stand by their motto: "If you can't fix it, you don't own it". iFixIt also sells repair kits that provide tools to open and unlock devices and electronics for repair.</p>
+        <input id="ifixit" type="button" value="iFixIt">
+        <div id = "section">
+          <h3>Beyond repair? Choose recycling.</h3>
+          <input id="recycling" type="button" value="Learn About Your Recycling Rights">
+        </div>
+        <script>
+          document.getElementById("repairright").addEventListener("click", redirectExternalLaw);
+          function redirectExternalLaw(){
+              window.location = "https://www.nysenate.gov/legislation/bills/2021/S4104";
+          }
+
+          document.getElementById("ifixit").addEventListener("click", ifixit);
+          function ifixit(){
+              window.location = "https://www.ifixit.com";
+          }
+          
+          document.getElementById("recycling").addEventListener("click", redirectRecycling);
+          function redirectRecycling(){
+              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/recycling-rights/";
+          }
+        </script>
+      </body>
+      {{ content }}
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
+    </div>
+  </div>
+</main>
