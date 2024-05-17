@@ -39,6 +39,14 @@ input[type=submit], input[type=reset], input[type=button] {
   cursor: pointer;
 }
 
+img.resize {
+  min-width: 10%;
+  max-width: 30%;
+  min-height: 10%;
+  max-height: 30%;
+  display: block;
+  margin: 0 auto;
+}
 /* Remove float: center from input[type=button] */
 
 
