@@ -1,5 +1,5 @@
 ---
 layout: repair-rights
-title: Repair
+title: Before you recycle, have you considered repair?
 ---
 
