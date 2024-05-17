@@ -55,6 +55,10 @@ img.resize {
   float: right;
 }
 
+#ifixit {
+  float: center;
+}
+
 /* Remove float: center from input[type=button] */
 
 
