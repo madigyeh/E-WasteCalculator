@@ -1,1 +1,101 @@
+---
+layout: base
+---
 
+{% include header.html type="page" %}
+
+<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+      <head>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <script type="text/javascript" src="../assets/js/results.js"></script>
+      </head>
+      <body>
+        <div id = "section">
+          <h2>Before you recycle, have you considered repair?</h2>
+    
+          <p>While recycling old technology can reduce CO2 emissions, repair can avoid emissions completely!</p>
+          <img id ="car" class="resize" src="../assets/img/car.png" alt="Car">
+          <p>Your CO2 savings equal approximately a <span id="totalMileage"></span>mi drive.</p>
+        </div>
+  
+        <div id = "section">
+          <h2>Next Steps:</h2>
+          <div class = "row1">
+            <input id="recycler" type="button" value="Find an E-Waste Recycler">
+            <input id="rights" type="button" value="Learn About Your Rights">
+          </div>
+          <div class = "row2">
+            <p>Do your part to eliminate e-waste!</p>
+          </div>
+        </div>
+        <script>
+          const mic = Number(localStorage.getItem("microwaveValue"));
+          const kap = Number(localStorage.getItem("kappValue"));
+          const hv = Number(localStorage.getItem("heatventValue"));
+          const hd = Number(localStorage.getItem("hairdryerValue"));
+          const vc = Number(localStorage.getItem("vacuumValue"));
+          const tv = Number(localStorage.getItem("tvValue"));
+          const dw = Number(localStorage.getItem("dishwasherValue"));
+          const dry = Number(localStorage.getItem("dryerValue"));
+          const fr = Number(localStorage.getItem("fridgeValue"));
+          const ac = Number(localStorage.getItem("ACValue"));
+          const fz = Number(localStorage.getItem("freezerValue"));
+          const opc = Number(localStorage.getItem("otherPCValue"));
+          const li = Number(localStorage.getItem("lithiumionValue"));
+          const nic = Number(localStorage.getItem("nickelValue"));
+          const alk = Number(localStorage.getItem("alkalineValue"));
+          const ph = Number(localStorage.getItem("phoneValue"));
+          const lp = Number(localStorage.getItem("laptopValue"));
+          const pr = Number(localStorage.getItem("printerValue"));
+          const rt = Number(localStorage.getItem("routerValue"));
+          const ope = Number(localStorage.getItem("otherPEValue"));
+          const total = mic + kap + hv + hd + vc + tv + dw + dry + fr + ac + fz + opc + li + nic + alk + ph + lp + pr + rt + ope;
+          const ewasteTotal = 21 * mic + 10 * kap + 22 * hv + 2 * hd + 10 * vc + 28 * tv + 140 * dw + 175 * dry + 315 * fr + 170 * ac + 110 * fz + 25 * opc + 0.051 * li + 0.051 * nic + 0.051 * alk + 0.4 * ph + 5 * lp + 5 * pr + 1 * rt + 3 * ope;
+          const co2Total = (ewasteTotal * 1.44).toFixed(2);
+          const distance = (co2Total / 0.96).toFixed(2);
+          
+          const displayCount = document.querySelector("#totalItems");
+          displayCount.textContent = total;
+
+          const displayEwaste = document.querySelector("#totalWaste");
+          displayEwaste.textContent = ewasteTotal;
+
+          const displayCO2 = document.querySelector("#totalCO2");
+          displayCO2.textContent = co2Total;
+
+          const displayMileage = document.querySelector("#totalMileage");
+          displayMileage.textContent = distance;
+
+          document.getElementById("recycler").addEventListener("click", redirectMapFunction);
+          function redirectMapFunction(){
+              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/map/";
+          }
+          
+          document.getElementById("rights").addEventListener("click", redirectRightsFunction);
+          function redirectRightsFunction(){
+              window.location.href = "https://madigyeh.github.io/E-WasteCalculator/repair-rights/";
+          }
+        </script>
+      </body>
+      {{ content }}
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
+    </div>
+  </div>
+</main>
