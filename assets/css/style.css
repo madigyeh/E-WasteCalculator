@@ -1,8 +1,13 @@
 p, h1, h2, h3 {
   text-align: center;
 }
+
 #space {
   margin-top: 40px;
+}
+
+#small_space {
+  margin-top: 20px;
 }
 
 #section {
