@@ -19,10 +19,9 @@ layout: base
         <script type="text/javascript" src="../assets/js/results.js"></script>
       </head>
       <body>
-        <h1>Before you recycle, have you considered repair?</h1>
-        <p>While recycling old technology can reduce CO2 emissions, repair can avoid emissions completely!</p>
+        <h1>Recycling is the best option when your used tech is beyond repair.</h1>
         <div id = "section">
-          <h3>In 2022, New York State passed the "Right to Repair" Law, formally known as the Digital Fair Repair Act</h3>
+          <h3>In 2014, New York State passed the Electronic Equipment Recycling and Reuse Act</h3>
           <h5>The following items are covered under the Digital Fair Repair Act:</h5>
           <div class = "row1">
             <div class = "row1-1">
@@ -79,7 +78,7 @@ layout: base
             </div>
           </div>
           <h3>Why does this matter?</h3>
-          <input id="repairright" type="button" value="Read the Law">
+          <input id="recycleright" type="button" value="Read the Law">
         </div>
         <h2>Featured Resource: iFixIt</h2>
         <img src="../assets/img/Apple-Self-Service-Repair-Program-iPhone.jpeg" alt="iFixIt">
@@ -90,9 +89,9 @@ layout: base
           <input id="repair" type="button" value="Learn About Your Repair Rights">
         </div>
         <script>
-          document.getElementById("repairright").addEventListener("click", redirectExternalLaw);
-          function redirectExternalLaw(){
-              window.location = "https://www.nysenate.gov/legislation/bills/2021/S4104";
+          document.getElementById("recycleright").addEventListener("click", redirectExternalRLaw);
+          function redirectExternalRLaw(){
+              window.location = "https://www.nysenate.gov/legislation/laws/ENV/A27T26";
           }
 
           document.getElementById("ifixit").addEventListener("click", ifixit);
