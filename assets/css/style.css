@@ -68,7 +68,7 @@ img.resize {
   float: right;
 }
 
-#ifixit {
+#ifixit, #mapnav {
   display: block; 
   margin: 0 auto;
   width: fit-content;
